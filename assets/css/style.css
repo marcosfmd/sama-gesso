@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+
+* {
+
+  font-family: 'Lato', sans-serif;
+}
+
+.bg-primary-color {
+  background-color: #fff;
+}
+
+.bg-secondary-color {
+  background-color: #ece8ea;
+}
+
+.bg-dark-color {
+  background-color: #050505;
+}
+
+
+.primary-color {
+  color: #050505;
+}
+
+.secondary-color {
+  color: #7a7a7a;
+}
+
+/* NAVBAR */
+#navbar {
+  border-bottom: 1px solid #7a7a7a;
+}
+
+#navbar:hover {
+  color: 7a7a7a;
+}
+
+#navbar a.active {
+  border-bottom: 1px solid #050505;
+}
+
+.navbar-brand {
+  display: flex;
+}
+
+.navbar-brand img {
+  width: 40px;
+}
+
+.navbar-brand span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+
+#navbar-items .navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#navbar-items .nav-item {
+  margin: .8em;
+}
+
+/* SLIDER */
+#slider {
+  margin-top: 8em;
+  margin-bottom: 1em;
+}
+
+#slider .carousel-caption {
+  bottom: 3em;
+}
+
+#slider .carousel-caption h5 {
+  font-size: 2.5em;
+  text-shadow: #000 2px 2px;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+#slider .btn {
+  font-size: 1em;
+  padding: 0.3 0.8em;
+  margin: 1em;
+  border-radius: 5px;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+  color: #000;
+  font-size: 3em;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #222;
+  opacity: 0.8;
+}
+
+.carousel-indicators .active {
+  background-color: #000;
+}
+
+/* Mini banners */
+#mini-banners {
+  margin-bottom: 4em;
+}
+
+#mini-banners .card {
+  padding: 2em 0.3em;
+}
+
+#mini-banners i {
+  font-size: 4em;
+}
+
+#mini-banners .card-title {
+  margin-bottom: 1.5em;
+  font-weight: 700;
+}
+
+#mini-banners .card-text {
+  text-align: justify;
+}
+
+#mini-banners .btn {
+  border-radius: 4px;
+  margin-top: 1.5em;
+  padding: .6em 1.2em;
+}
+
+/* Destaques */
+#featured-container {
+  margin-bottom: 4em;
+}
+
+.title {
+  font-size: 1.75em;
+  margin-bottom: .4em;
+  position: relative;
+}
+
+.title::before {
+  content: '';
+  width: 75px;
+  position: absolute;
+  bottom: 2em;
+  border-top: 4px solid #7a7a7a;
+}
+
+#featured-images {
+  margin-top: 2em;
+}
+
+#featured-images .col-md-4 {
+  position: relative;
+  cursor: pointer;
+}
+
+#featured-images .col-md-4:hover > .banner-content {
+  opacity: 0.8;
+}
+
+#featured-images .banner-content {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  transition: .5s;
+}
+
+/* Info */
+#info-content {
+  margin-bottom: 4em;
+  padding: 4em 1em;
+}
+
+#info-numbers {
+  margin: 1.5em 0;
+}
+
+#info-banner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5em;
+}
+
+#info-numbers h3{
+  font-size: 3em;
+}
+
+/* footer top */
+#footer {
+  padding: 3em 2em;
+}
+
+#footer-top {
+  margin-bottom: 2em;
+}
+
+#footer-top,
+#footer-top i {
+  color: #fff;
+}
+
+#social-icons {
+  text-align: right;
+}
+
+#social-icons i {
+  font-size: 1.5em;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+#social-icons i:hover {
+  color: #7a7a7a;
+}
+
+/* Footer Details */
+#footer-details {
+  margin-bottom: 3em;
+}
+
+#news-container,
+#contact-container,
+#links-container {
+  border: 0;
+  padding: 0;
+  margin-bottom: 2em;
+}
+
+#footer-details h4 {
+  color: #fff;
+  margin-bottom: 1.5em;
+}
+
+#news-container input{
+  border-radius: 4px;
+  border: none;
+}
+
+#links-container li {
+ margin-bottom: .5em;
+}
+
+#links-container a {
+  text-decoration: none;
+}
+
+#links-container a:hover {
+  color: #fff;
+}
+
+/* Footer Details */
+#footer-bottom {
+  border-top: 1px solid #7a7a7a;
+  padding-top: 2em;
+}
+
+#footer-bottom i {
+  color: #e61e10;
+  margin-left: .3em;
+}
+
+
+/* Responsividade */
+@media screen and (min-width: 768px) {
+  #slider .carousel-caption {
+    bottom: 5em;
+  }
+  #slider .carousel-item img {
+    height: 87vh;
+  }
+
+  #slider .carousel-caption h5 {
+    font-size: 3.8em;
+    text-shadow: #000 2px 3px;
+    margin-top: -150px;
+  }
+
+  #slider .btn {
+    font-size: 1.2em;
+    padding: 0.6 1.8em;
+    margin-bottom: 100px;
+  }
+
+  .carousel-indicators {
+    bottom: 7em;
+  }
+
+  #mini-banners {
+    margin-top: -6em;
+  }
+
+  .title {
+    font-size: 2.4em;
+  }
+
+  #featured-container .title::before {
+    bottom: 1.5em;
+  }
+
+  #featured-images .banner-content {
+    opacity: 0;
+  }
+
+  #info-content {
+    padding: 3.5em;
+  }
+
+  #news-container {
+    padding-right: 2em;
+  }
+
+  #links-container {
+    padding-left: 2em;
+  }
+
+  #contact-container {
+    border-left: 1px solid #7a7a7a;
+    border-right: 1px solid #7a7a7a;
+    padding: 0 2em;
+  }
+}
